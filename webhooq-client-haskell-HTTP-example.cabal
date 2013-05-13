@@ -18,17 +18,23 @@ cabal-version:       >=1.8
 executable wq-client-hs
   hs-source-dirs:    src
   main-is:           Main.hs 
-  -- other-modules:       
-  build-depends:     base == 4.5.*,
-                     scotty == 0.4.*,
---                     containers == 0.4.2.*,
-                     unordered-containers == 0.2.3.*,
-                     stm == 2.4,
-                     uuid == 1.2.11.1,
-                     uuid-aeson >= 0.1,
-                     uuid-hashable >= 0.1,
-                     text == 0.11.*,
-                     bytestring == 0.9.*,
-                     http-types == 0.8.*,
-                     transformers == 0.3.*,
-                     aeson == 0.6.1.*
+
+  build-depends:
+    base == 4.5.*,
+    scotty == 0.4.*,
+    unordered-containers == 0.2.3.*,
+    stm == 2.4,
+    uuid == 1.2.11.1,
+    uuid-v4 == 1.2.11.1,
+    uuid-aeson >= 0.1,
+    uuid-hashable >= 0.1,
+    text == 0.11.*,
+    bytestring == 0.9.*,
+    http-types == 0.8.*,
+    transformers == 0.3.*,
+    aeson == 0.6.1.*,
+    network >= 2.3,
+    webhooq-client-haskell-HTTP == 0.2.*,
+    mime >= 0.3.4,
+    HUnit >= 1.2.5,
+    HTTP  >= 4000.2
