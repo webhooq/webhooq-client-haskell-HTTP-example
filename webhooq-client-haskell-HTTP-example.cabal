@@ -17,7 +17,7 @@ cabal-version:       >=1.8
 
 executable wq-client-hs
   hs-source-dirs:    src
-  main-is:           Main.hs 
+  main-is:           RoundTripSpec.hs 
 
   build-depends:
     base == 4.5.*,
@@ -37,4 +37,5 @@ executable wq-client-hs
     webhooq-client-haskell-HTTP == 0.2.*,
     mime >= 0.3.4,
     HUnit >= 1.2.5,
+    hspec >= 1.5,
     HTTP  >= 4000.2
